@@ -1,0 +1,70 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ae0543fe805424df99fe08ce744cbe49, type: 3}
+  m_Name: bind
+  m_EditorClassIdentifier: 
+  m_PoseEntries:
+  - path: Green/bones green/hip
+    localPosition: {x: -0.03, y: -0.34, z: 0}
+    localRotation: {x: 0, y: 0, z: 0.7071068, w: 0.7071068}
+    localScale: {x: 1, y: 1, z: 1}
+  - path: Green/bones green/hip/torso
+    localPosition: {x: 0.34001288, y: 0, z: 0}
+    localRotation: {x: 0, y: 0, z: -0.020421837, w: 0.99979144}
+    localScale: {x: 1, y: 1, z: 1}
+  - path: Green/bones green/hip/torso/head
+    localPosition: {x: 0.49569124, y: 0.000000009888026, z: 0}
+    localRotation: {x: 0, y: 0, z: -0.01911516, w: 0.9998173}
+    localScale: {x: 1, y: 1, z: 1}
+  - path: Green/bones green/hip/torso/head/hairR
+    localPosition: {x: 0.27216923, y: 0.000000019604158, z: 0}
+    localRotation: {x: 0, y: 0, z: -0.9287299, w: 0.37075704}
+    localScale: {x: 1, y: 1, z: 1}
+  - path: Green/bones green/hip/torso/head/hairL
+    localPosition: {x: 0.26206318, y: 0.09479109, z: 0}
+    localRotation: {x: 0, y: 0, z: 0.98755103, w: 0.15729897}
+    localScale: {x: 1, y: 1, z: 1}
+  - path: 'Green/bones green/hip/torso/LArm '
+    localPosition: {x: 0.32633486, y: 0.087379836, z: 0}
+    localRotation: {x: 0, y: 0, z: 0.98836714, w: 0.1520868}
+    localScale: {x: 1.000001, y: 1.000001, z: 1}
+  - path: Green/bones green/hip/torso/RArm
+    localPosition: {x: 0.34794068, y: -0.16549847, z: 0}
+    localRotation: {x: 0, y: 0, z: -0.99999976, w: 0.00074936764}
+    localScale: {x: 1, y: 1, z: 1}
+  - path: Green/bones green/hip/torso/clothes1
+    localPosition: {x: 0.35372323, y: -0.096411705, z: 0}
+    localRotation: {x: 0, y: 0, z: -0.9972218, w: 0.07448967}
+    localScale: {x: 1, y: 1, z: 1}
+  - path: Green/bones green/hip/torso/clothes1/clothes2
+    localPosition: {x: 0.86785454, y: 0.000000059604645, z: 0}
+    localRotation: {x: 0, y: 0, z: -0.8097707, w: 0.5867465}
+    localScale: {x: 1, y: 1, z: 1}
+  - path: Green/bones green/hip/torso/clothes1/clothes2/clothes3
+    localPosition: {x: 0.39000016, y: 0.00000014901161, z: 0}
+    localRotation: {x: 0, y: 0, z: -0.67307633, w: 0.739573}
+    localScale: {x: 1, y: 1, z: 1}
+  - path: Green/bones green/hip/RLeg
+    localPosition: {x: -0.073654346, y: -0.16917539, z: 0}
+    localRotation: {x: 0, y: 0, z: 0.99954194, w: 0.030264122}
+    localScale: {x: 1, y: 1, z: 1}
+  - path: Green/bones green/hip/RLeg/RL2
+    localPosition: {x: 0.29420015, y: 0.000000022351742, z: 0}
+    localRotation: {x: 0, y: 0, z: 0, w: 1}
+    localScale: {x: 1, y: 1, z: 1}
+  - path: 'Green/bones green/hip/LLeg '
+    localPosition: {x: -0.05195596, y: 0.12104636, z: 0}
+    localRotation: {x: 0, y: 0, z: -0.99917835, w: 0.040529665}
+    localScale: {x: 1.0000008, y: 1.0000008, z: 1}
+  - path: Green/bones green/hip/LLeg /LL2
+    localPosition: {x: 0.2926669, y: -0.0000000298023, z: 0}
+    localRotation: {x: 0, y: 0, z: 0, w: 1}
+    localScale: {x: 1, y: 1, z: 1}
