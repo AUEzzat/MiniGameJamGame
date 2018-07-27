@@ -45,7 +45,6 @@ public class HookRotation : MonoBehaviour
                 continue;
             var dir = Players[i].transform.position - gameObject.transform.position;
             float val = Vector3.Dot(dir, hook.transform.right);
-            print(val);
             if (val < 0 && val > AIAim)
             {
                 closestPosition = Players[i].transform.position;

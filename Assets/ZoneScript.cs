@@ -7,13 +7,13 @@ using UnityEngine.UI;
 public class ZoneScript : MonoBehaviour
 {
     public List<GameObject> AllPlayers;
-    private List<GameObject> PlayersInZone;
+    public List<GameObject> PlayersInZone;
     private float LastTimer;
     public Text CountDownTimeText, RoundEndText;
     public float CountDownTime, TimerCD;
     public int fontSize, maxFontSize, fontSizeIncrementSpeed;
     public ParticleSystem ZonePoison, ZonePoison2;
-    private bool endTime = false;
+    public bool endTime = false;
 
 
     private void OnTriggerEnter2D(Collider2D col)

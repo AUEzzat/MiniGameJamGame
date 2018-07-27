@@ -10,9 +10,10 @@ public enum GameMode
 }
 public class PlayerController : MonoBehaviour
 {
+    public GameObject currentPlatform;
     public GameMode gameMode;
     public int HP = 3;
-    bool grounded = false, canDash = true;
+    public bool grounded = false, canDash = true;
     float width;
     float height;
     public string horizontalLeft;
@@ -189,20 +190,9 @@ public class PlayerController : MonoBehaviour
                 break;
         }
 
-        if (Input.GetKeyDown(dashKey) && canDash && !stunned && !myHook.GetComponent<HookScript>().hooked)
+        if (Input.GetKeyDown(dashKey))
         {
-            playerRigidBody.AddForce(-transform.right * dashSpeed, ForceMode2D.Impulse);
-
-            mySource.PlayOneShot(dashSound);
-            myAnim.SetTrigger("Dashed");
-            if (playerRigidBody.velocity.x > 0)
-                dashRight.Play();
-            else
-            {
-                dashLeft.Play();
-            }
-            canDash = false;
-            lastDash = Time.time;
+            Dash();
         }
 
         if (lastDash + dashCD < Time.time)
@@ -226,30 +216,12 @@ public class PlayerController : MonoBehaviour
         //float yMove = Input.GetAxis(verticalLeft);
         if (Math.Abs(xMove) < xMoveDeadZone && !stunned)
             xMove = 0;
-        else if(Math.Abs(xMove) > xMoveDeadZone && !stunned)
-        {
-            playerRigidBody.velocity += new Vector2(xMove * moveSpeed, 0);
-            playerRigidBody.velocity = playerRigidBody.velocity.x > maxVelocity && playerRigidBody.velocity.x < maxVelocity - 10
-                ? new Vector2(maxVelocity, 0) : playerRigidBody.velocity;
-            if (playerRigidBody.velocity.x > 0 && !myHook.GetComponent<HookScript>().hooked)
-            {
-                playerRigidBody.transform.right = new Vector3(-1, 0, 0);
-            }
-            else if ((playerRigidBody.velocity.x <= 0 && !myHook.GetComponent<HookScript>().hooked))
-            {
-                playerRigidBody.transform.right = new Vector3(1, 0, 0);
-            }
+        else if(Math.Abs(xMove) > xMoveDeadZone) {
+            Move(xMove);
         }
 
-        if (Input.GetKeyDown(jumpKey) && grounded && !stunned)
-        {
-            grounded = false;
-            jump.Play();
-            mySource.PlayOneShot(jumpSound);
-            myAnim.SetBool("isJumping", true);
-            myAnim.SetBool("isGrounded", false);
-            playerRigidBody.velocity = new Vector2(playerRigidBody.velocity.x, 0);
-            playerRigidBody.AddForce(Vector3.up * jumpSpeed, ForceMode2D.Impulse);
+        if (Input.GetKeyDown(jumpKey)) {
+            Jump();
         }
 
         //------------------------------------------------------------------------------------------
@@ -271,6 +243,7 @@ public class PlayerController : MonoBehaviour
                     hittedObj = hitList[i].collider.gameObject;
                 }
                 grounded = true;
+                currentPlatform = hitList[i].collider.gameObject;
                 myAnim.SetBool("isGrounded", true);
 
             }
@@ -307,11 +280,6 @@ public class PlayerController : MonoBehaviour
 
     }
 
-    void FixedUpdate()
-    {
-
-    }
-
     IEnumerator waitforStun()
     {
         stunned = true;
@@ -322,5 +290,57 @@ public class PlayerController : MonoBehaviour
         myAnim.SetBool("isStunned", false);
 
 
+    }
+
+    public void Jump()
+    {
+        if (grounded && !stunned)
+        {
+            grounded = false;
+            jump.Play();
+            mySource.PlayOneShot(jumpSound);
+            myAnim.SetBool("isJumping", true);
+            myAnim.SetBool("isGrounded", false);
+            playerRigidBody.velocity = new Vector2(playerRigidBody.velocity.x, 0);
+            playerRigidBody.AddForce(Vector3.up * jumpSpeed, ForceMode2D.Impulse);
+
+        }
+    }
+
+    public void Dash()
+    {
+        if (canDash && !stunned && !myHook.GetComponent<HookScript>().hooked)
+        {
+            playerRigidBody.AddForce(-transform.right * dashSpeed, ForceMode2D.Impulse);
+
+            mySource.PlayOneShot(dashSound);
+            myAnim.SetTrigger("Dashed");
+            if (playerRigidBody.velocity.x > 0)
+                dashRight.Play();
+            else
+            {
+                dashLeft.Play();
+            }
+            canDash = false;
+            lastDash = Time.time;
+        }
+    }
+
+    public void Move(float xMove)
+    {
+        if (!stunned)
+        {
+            playerRigidBody.velocity += new Vector2(xMove * moveSpeed, 0);
+            playerRigidBody.velocity = playerRigidBody.velocity.x > maxVelocity && playerRigidBody.velocity.x < maxVelocity - 10
+                ? new Vector2(maxVelocity, 0) : playerRigidBody.velocity;
+            if (playerRigidBody.velocity.x > 0 && !myHook.GetComponent<HookScript>().hooked)
+            {
+                playerRigidBody.transform.right = new Vector3(-1, 0, 0);
+            }
+            else if ((playerRigidBody.velocity.x <= 0 && !myHook.GetComponent<HookScript>().hooked))
+            {
+                playerRigidBody.transform.right = new Vector3(1, 0, 0);
+            }
+        }
     }
 }

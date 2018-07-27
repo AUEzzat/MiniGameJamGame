@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/JumpMode.unity
+- path: Assets/neveen Stuff/Assets/Scenes/ReadyUI.unity
   isLoaded: 1
   isActive: 1

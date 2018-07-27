@@ -480,7 +480,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_Length: 0.49569446
+  m_Length: 0.4956944
   m_Child: {fileID: 0}
   m_ChildTransform: {fileID: 1926194766}
   m_AttachedIK: {fileID: 0}
@@ -818,7 +818,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_Length: 0.2942002
+  m_Length: 0.29420018
   m_Child: {fileID: 0}
   m_ChildTransform: {fileID: 1583990687}
   m_AttachedIK: {fileID: 0}
@@ -1126,7 +1126,7 @@ MonoBehaviour:
     - m_Bone: {fileID: 0}
       m_BoneTransform: {fileID: 1646294994}
       solverPosition: {x: 0, y: 0, z: 0}
-      solverRotation: {x: 0, y: 0, z: -0.99917835, w: 0.04052955}
+      solverRotation: {x: 0, y: 0, z: -0.99917835, w: 0.040529665}
       defaultLocalRotation: {x: 0, y: 0, z: 0.9981013, w: -0.06159468}
     - m_Bone: {fileID: 0}
       m_BoneTransform: {fileID: 1967560701}
@@ -1135,7 +1135,7 @@ MonoBehaviour:
       defaultLocalRotation: {x: 0, y: 0, z: -0.02850538, w: 0.9995937}
     m_Weight: 1
     m_RestoreDefaultPose: 1
-    targetPosition: {x: -0.28284296, y: -0.39311802, z: 90}
+    targetPosition: {x: -0.17508943, y: -0.6742239, z: 90}
     flip: 0
 --- !u!1 &464439852
 GameObject:
@@ -1230,7 +1230,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_Length: 0.29420027
+  m_Length: 0.29420018
   m_Child: {fileID: 0}
   m_ChildTransform: {fileID: 64612518}
   m_AttachedIK: {fileID: 1984219435}
@@ -2018,7 +2018,18 @@ MonoBehaviour:
   m_Group: {fileID: 0}
   onValueChanged:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1099788425}
+        m_MethodName: SetAIPlayer
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 2
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_TypeName: UnityEngine.UI.Toggle+ToggleEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
   m_IsOn: 0
@@ -2089,7 +2100,7 @@ MonoBehaviour:
       defaultLocalRotation: {x: 0, y: 0, z: 0.047482498, w: 0.9988721}
     m_Weight: 1
     m_RestoreDefaultPose: 1
-    targetPosition: {x: -0.19319184, y: -0.40448228, z: 90}
+    targetPosition: {x: -0.049641572, y: -0.69012576, z: 90}
     flip: 0
 --- !u!1 &860558696
 GameObject:
@@ -2149,7 +2160,7 @@ MonoBehaviour:
     - m_Bone: {fileID: 0}
       m_BoneTransform: {fileID: 1670811562}
       solverPosition: {x: 0, y: 0, z: 0}
-      solverRotation: {x: 0, y: 0, z: -0.99917835, w: 0.040529665}
+      solverRotation: {x: 0, y: 0, z: -0.99917835, w: 0.040529784}
       defaultLocalRotation: {x: 0, y: 0, z: 0.9981013, w: -0.06159468}
     - m_Bone: {fileID: 0}
       m_BoneTransform: {fileID: 2048590282}
@@ -2158,7 +2169,7 @@ MonoBehaviour:
       defaultLocalRotation: {x: 0, y: 0, z: -0.02850538, w: 0.9995937}
     m_Weight: 1
     m_RestoreDefaultPose: 1
-    targetPosition: {x: 0.7273104, y: -0.39311802, z: 90}
+    targetPosition: {x: 1.2384076, y: -0.6742239, z: 90}
     flip: 0
 --- !u!1 &875879775
 GameObject:
@@ -2857,7 +2868,18 @@ MonoBehaviour:
   m_Group: {fileID: 0}
   onValueChanged:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1099788425}
+        m_MethodName: SetAIPlayer
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 3
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_TypeName: UnityEngine.UI.Toggle+ToggleEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
   m_IsOn: 0
@@ -3195,7 +3217,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_Length: 0.29266706
+  m_Length: 0.29266703
   m_Child: {fileID: 0}
   m_ChildTransform: {fileID: 1225869253}
   m_AttachedIK: {fileID: 0}
@@ -3736,7 +3758,18 @@ MonoBehaviour:
   m_Group: {fileID: 0}
   onValueChanged:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1099788425}
+        m_MethodName: SetAIPlayer
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 1
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_TypeName: UnityEngine.UI.Toggle+ToggleEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
   m_IsOn: 0
@@ -3816,7 +3849,18 @@ MonoBehaviour:
   m_Group: {fileID: 0}
   onValueChanged:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1099788425}
+        m_MethodName: SetAIPlayer
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_TypeName: UnityEngine.UI.Toggle+ToggleEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
   m_IsOn: 0
@@ -4145,7 +4189,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_Length: 0.2942003
+  m_Length: 0.29420015
   m_Child: {fileID: 0}
   m_ChildTransform: {fileID: 2077294335}
   m_AttachedIK: {fileID: 827920048}
@@ -4173,7 +4217,7 @@ Transform:
     type: 2}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1646294993}
-  m_LocalRotation: {x: 0, y: 0, z: -0.99917835, w: 0.04052955}
+  m_LocalRotation: {x: 0, y: 0, z: -0.99917835, w: 0.040529665}
   m_LocalPosition: {x: -0.05195596, y: 0.12104636, z: 0}
   m_LocalScale: {x: 1.0000008, y: 1.0000008, z: 1}
   m_Children:
@@ -4394,7 +4438,7 @@ Transform:
     type: 2}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1670811561}
-  m_LocalRotation: {x: 0, y: 0, z: -0.99917835, w: 0.040529665}
+  m_LocalRotation: {x: 0, y: 0, z: -0.99917835, w: 0.040529784}
   m_LocalPosition: {x: -0.05195596, y: 0.12104636, z: 0}
   m_LocalScale: {x: 1.0000008, y: 1.0000008, z: 1}
   m_Children:
@@ -4467,7 +4511,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_Length: 0.49567348
+  m_Length: 0.49567342
   m_Child: {fileID: 0}
   m_ChildTransform: {fileID: 218395433}
   m_AttachedIK: {fileID: 0}
@@ -5386,7 +5430,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_Length: 0.33177897
+  m_Length: 0.33177876
   m_Child: {fileID: 0}
   m_ChildTransform: {fileID: 510202228}
   m_AttachedIK: {fileID: 0}
@@ -5539,7 +5583,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4384723836728258, guid: c9b4a30099ea1eb45850e89342b347b8, type: 2}
       propertyPath: m_LocalRotation.w
-      value: 0.040529665
+      value: 0.04052955
       objectReference: {fileID: 0}
     - target: {fileID: 4384723836728258, guid: c9b4a30099ea1eb45850e89342b347b8, type: 2}
       propertyPath: m_LocalEulerAnglesHint.z
@@ -5635,7 +5679,7 @@ MonoBehaviour:
       defaultLocalRotation: {x: 0, y: 0, z: 0.047482498, w: 0.9988721}
     m_Weight: 1
     m_RestoreDefaultPose: 1
-    targetPosition: {x: 0.8169615, y: -0.40448228, z: 90}
+    targetPosition: {x: 1.3638554, y: -0.69012576, z: 90}
     flip: 0
 --- !u!1 &1987935116
 GameObject:
@@ -5854,7 +5898,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_Length: 0.49567387
+  m_Length: 0.49567384
   m_Child: {fileID: 0}
   m_ChildTransform: {fileID: 1010099724}
   m_AttachedIK: {fileID: 0}

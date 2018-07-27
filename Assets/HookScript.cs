@@ -78,16 +78,9 @@ public class HookScript : MonoBehaviour
                 break;
         }
 
-        bool stunned = player.transform.parent.GetComponent<PlayerController>().stunned;
-        if (Input.GetKeyDown(fireKeyCode) && !hooked && canHook && !stunned)
+        if (Input.GetKeyDown(fireKeyCode))
         {
-            hookshot.Play();
-            mySource.PlayOneShot(hookShot);
-            move = false;
-            canHook = false;
-            //closestPos = player.transform.parent.GetComponent<HookRotation>().closestPosition;
-            lastReturnTime = Time.time;
-
+            Hook();
         }
         
         if (!canHook && move && lastHookTime + hookCD < Time.time )
@@ -140,9 +133,18 @@ public class HookScript : MonoBehaviour
 
     }
 
-    void FixedUpdate()
+    public void Hook()
     {
+        bool stunned = player.transform.parent.GetComponent<PlayerController>().stunned;
+        if (!hooked && canHook && !stunned)
+        {
+            hookshot.Play();
+            mySource.PlayOneShot(hookShot);
+            move = false;
+            canHook = false;
+            //closestPos = player.transform.parent.GetComponent<HookRotation>().closestPosition;
+            lastReturnTime = Time.time;
 
-
+        }
     }
 }

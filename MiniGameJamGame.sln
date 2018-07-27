@@ -1,6 +1,6 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 2017
+# Visual Studio 15
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MiniGameJamGame", "MiniGameJamGame.csproj", "{F4B138BB-6772-10D1-04B9-583D88227F26}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MiniGameJamGame.Editor", "MiniGameJamGame.Editor.csproj", "{EC3E3D70-5107-6DB1-432C-AFD164D33AEB}"
